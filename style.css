@@ -1,0 +1,82 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(17, 17, 91), rgb(15, 40, 15));
+    /*EfeitoGradiente*/
+}
+.box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width:30%;
+   
+    color:white;
+    
+    /*Centraliza contéudo da div box*/
+}
+fieldset{
+    border:3px solid royalblue;
+}
+legend{
+    text-align: center;
+    padding:10px;
+    border:1px solid royalblue;
+    background-color: royalblue;
+    border-radius: 5px;
+}
+.inputBox{
+    position:relative;
+    
+}
+.inputUser{
+    background:none;
+    border:none;
+    border-bottom: 1px solid white ;
+    outline:none;
+    color:white;
+    font-size:15px;
+    width:100%;
+    letter-spacing:2px;/*Espaço entre as letras*/
+
+}
+.labelInput{
+    position:absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top:-20px;
+    font-size:12px;
+    color:royalblue;
+    
+}
+#data_nasc{
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    font-size:15px;
+ 
+}
+#send{
+    margin-top: 20px;
+    padding:15px;
+    background-color: royalblue;
+    border:none;
+    border-radius:5px;
+    width:100%;
+    color:white;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    cursor:pointer;
+}
+#send:hover{
+    background-image: linear-gradient(to right, rgb(17, 17, 91), rgb(15, 40, 15));
+}
